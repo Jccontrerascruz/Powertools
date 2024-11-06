@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerTools - Detalle del Producto</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        PowerTools
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalog">Nuestros productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#billing">Facturación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#support">Soporte</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección de Detalle del Producto -->
+  <section class="product-detail container my-5">
+    <div class="row">
+      <!-- Imagen del Producto -->
+      <div class="col-md-6">
+        <img src="Imagenes/taladro.jpg" alt="Taladro eléctrico" class="img-fluid">
+      </div>
+      
+      <!-- Información del Producto -->
+      <div class="col-md-6">
+        <h2>Taladro eléctrico</h2>
+        <p>¡Te aseguramos que con este producto, no perderás tu dinero!</p>
+
+        <div class="product-info p-4" style="background-color: #f9f9f9; border-radius: 8px;">
+          <p><strong>$150,000</strong></p>
+          <p>Entrega GRATIS el miércoles, 13 de noviembre a Colombia</p>
+          <p><strong>Disponible</strong></p>
+          
+          <!-- Selector de Cantidad -->
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Cantidad</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control">
+          </div>
+
+          <!-- Campo Total -->
+          <p><strong>Total: <span id="total">$0</span></strong></p>
+
+          <!-- Botones de Acción -->
+          <button class="btn btn-outline-primary btn-block mb-2">Agrega al carro</button>
+          <button class="btn btn-primary btn-block">Compra ahora</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="text-center py-4">
+    <p>© 2024 PowerTools - Todos los derechos reservados</p>
+    <div class="social-icons">
+      <a href="#"><img src="Imagenes/icon-facebook.png" alt="Facebook" width="30" height="30"></a>
+      <a href="#"><img src="Imagenes/icon-twitter.png" alt="Twitter" width="30" height="30"></a>
+      <a href="#"><img src="Imagenes/icon-instagram.png" alt="Instagram" width="30" height="30"></a>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap y script personalizado -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

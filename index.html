@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerTools - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Vinculación del archivo CSS externo -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        PowerTools
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalog">Nuestros productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#billing">Facturación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#support">Soporte</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#login">Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Principal con Video -->
+  <section class="hero text-center py-5">
+    <div class="container">
+      <video autoplay muted loop playsinline class="w-100 mb-4" style="border-radius: 8px;">
+        <source src="Video/VideoHome.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+      <h1 class="display-4">The largest community of photo enthusiasts</h1>
+      <p class="lead">Join our community and explore the world of professional and hobbyist photography.</p>
+      <a href="#" class="btn btn-primary btn-lg mt-3">Join Today</a>
+    </div>
+  </section>
+
+  <!-- Sección "Quiénes somos" -->
+  <section id="about" class="container my-5">
+    <h2 class="text-center mb-5">¿Quiénes somos?</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3>Sed ut perspiciatis</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <a href="#" class="btn btn-outline-primary">Learn more</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Lorem ipsum dolor</h3>
+        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+        <a href="#" class="btn btn-outline-primary">Learn more</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Nemo enim ipsam</h3>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+        <a href="#" class="btn btn-outline-primary">Learn more</a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Tempor incididunt</h3>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn btn-outline-primary">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección "Nuestros productos" -->
+  <section id="catalog" class="catalog container my-5">
+    <h2 class="text-center mb-5">Nuestros productos</h2>
+    <div class="row">
+      <!-- Herramienta 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card text-center">
+          <img src="Imagenes/taladro.jpg" alt="Taladro" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Taladro Eléctrico</h5>
+            <p class="card-text">$150,000</p>
+            <a href="product-detail.html" class="btn btn-outline-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Más herramientas... -->
+    </div>
+  </section>
+
+  <!-- Sección de llamada a la acción -->
+  <section class="cta text-center py-5" style="background-color: #e9ecef;">
+    <div class="container">
+      <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+      <a href="#" class="btn btn-primary btn-lg">Join Today</a>
+      <a href="#" class="btn btn-outline-secondary btn-lg ml-3">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="text-center py-4">
+    <p>© 2024 PowerTools - Todos los derechos reservados</p>
+    <div class="social-icons mb-3">
+      <a href="#"><img src="Imagenes/icon-facebook.png" alt="Facebook" width="30" height="30"></a>
+      <a href="#"><img src="Imagenes/icon-twitter.png" alt="Twitter" width="30" height="30"></a>
+      <a href="#"><img src="Imagenes/icon-instagram.png" alt="Instagram" width="30" height="30"></a>
+    </div>
+    <div class="links">
+      <a href="#">Mobile app</a> |
+      <a href="#">Community</a> |
+      <a href="#">Company</a> |
+      <a href="#">Help desk</a> |
+      <a href="#">Resources</a>
+    </div>
+  </footer>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
