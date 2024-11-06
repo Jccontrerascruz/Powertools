@@ -25,7 +25,10 @@
           <li class="nav-item"><a class="nav-link" href="#catalog">Nuestros productos</a></li>
           <li class="nav-item"><a class="nav-link" href="#billing">Facturación</a></li>
           <li class="nav-item"><a class="nav-link" href="#support">Soporte</a></li>
-          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#login">Iniciar sesión</a></li>
+          <!-- Botón de Inicio de Sesión que abre el modal -->
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-primary text-white" data-toggle="modal" data-target="#loginModal">Iniciar sesión</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -44,81 +47,73 @@
     </div>
   </section>
 
-  <!-- Sección "Quiénes somos" -->
-  <section id="about" class="container my-5">
-    <h2 class="text-center mb-5">¿Quiénes somos?</h2>
-    <div class="row">
-      <div class="col-md-6 mb-4">
-        <h3>Sed ut perspiciatis</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        <a href="#" class="btn btn-outline-primary">Learn more</a>
-      </div>
-      <div class="col-md-6 mb-4">
-        <h3>Lorem ipsum dolor</h3>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-        <a href="#" class="btn btn-outline-primary">Learn more</a>
-      </div>
-      <div class="col-md-6 mb-4">
-        <h3>Nemo enim ipsam</h3>
-        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-        <a href="#" class="btn btn-outline-primary">Learn more</a>
-      </div>
-      <div class="col-md-6 mb-4">
-        <h3>Tempor incididunt</h3>
-        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a href="#" class="btn btn-outline-primary">Learn more</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección "Nuestros productos" -->
-  <section id="catalog" class="catalog container my-5">
-    <h2 class="text-center mb-5">Nuestros productos</h2>
-    <div class="row">
-      <!-- Herramienta 1 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center">
-          <img src="Imagenes/taladro.jpg" alt="Taladro" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Taladro Eléctrico</h5>
-            <p class="card-text">$150,000</p>
-            <a href="product-detail.html" class="btn btn-outline-primary">Learn more</a>
-          </div>
+  <!-- Modal de Inicio de Sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo">
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="mr-auto">¿No tienes una cuenta? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Regístrate</a></p>
         </div>
       </div>
-      <!-- Más herramientas... -->
     </div>
-  </section>
+  </div>
 
-  <!-- Sección de llamada a la acción -->
-  <section class="cta text-center py-5" style="background-color: #e9ecef;">
-    <div class="container">
-      <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-      <a href="#" class="btn btn-primary btn-lg">Join Today</a>
-      <a href="#" class="btn btn-outline-secondary btn-lg ml-3">Contáctanos</a>
+  <!-- Modal de Registro -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Regístrate</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="registerEmail">Correo electrónico</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Ingrese su correo">
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Contraseña</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Cree una contraseña">
+            </div>
+            <div class="form-group">
+              <label for="registerConfirmPassword">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirme su contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+          </form>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Pie de Página -->
-  <footer class="text-center py-4">
-    <p>© 2024 PowerTools - Todos los derechos reservados</p>
-    <div class="social-icons mb-3">
-      <a href="#"><img src="Imagenes/icon-facebook.png" alt="Facebook" width="30" height="30"></a>
-      <a href="#"><img src="Imagenes/icon-twitter.png" alt="Twitter" width="30" height="30"></a>
-      <a href="#"><img src="Imagenes/icon-instagram.png" alt="Instagram" width="30" height="30"></a>
-    </div>
-    <div class="links">
-      <a href="#">Mobile app</a> |
-      <a href="#">Community</a> |
-      <a href="#">Company</a> |
-      <a href="#">Help desk</a> |
-      <a href="#">Resources</a>
-    </div>
-  </footer>
+  <!-- Resto del contenido de la página... -->
 
-  <!-- Scripts de Bootstrap -->
+  <!-- Scripts de Bootstrap y script personalizado -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
