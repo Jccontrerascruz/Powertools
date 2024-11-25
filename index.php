@@ -121,13 +121,13 @@
       </div>
       <div class="modal-body">
         <form action="datos.php" method="post">
-          <div class="form-group">
+        <div class="form-group">
             <label for="registerName">Nombres</label>
-            <input type="email" class="form-control" name="registerName" id="registerName" placeholder="Ingrese su nombre">
+            <input type="text" class="form-control" name="registerName" id="registerName" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">
             <label for="registerSurname">Apellido</label>
-            <input type="email" class="form-control" name="registerSurname" id="registerSurname" placeholder="Ingrese su nombre">
+            <input type="text" class="form-control" name="registerSurname" id="registerSurname" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">
             <label for="registerEmail">Correo electrónico</label>
