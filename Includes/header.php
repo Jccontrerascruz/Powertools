@@ -23,7 +23,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about">Quiénes Somos</a></li>
           <li class="nav-item"><a class="nav-link" href="#catalog">Nuestros productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="Facturacion.html">Mis compras</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="Facturacion.html">Mis compras</a></li>-->
           <li class="nav-item"><a class="nav-link" href="#support">Soporte</a></li>
           <li class="nav-item">
             <a href="#" class="nav-link btn btn-primary text-white" data-toggle="modal" data-target="#loginModal">Iniciar sesión</a>

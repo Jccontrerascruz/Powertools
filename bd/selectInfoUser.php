@@ -1,6 +1,6 @@
 <?php
 
-include "conexionBD.php";
+include "../includes/conexionBD.php";
 
 $sql = "SELECT Correo_Electronico, Contraseña, FROM usuarios";
 $result = $conn->query($sql);

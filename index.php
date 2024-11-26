@@ -2,7 +2,6 @@
 include 'includes/header.php';
 ?>
 
-
   <!-- Sección Principal con Video -->
   <section class="hero text-center py-5">
     <div class="container">
@@ -47,7 +46,6 @@ include 'includes/header.php';
   </div>
 </section>
 
-
 <!-- Modal de Inicio de Sesión -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -59,7 +57,7 @@ include 'includes/header.php';
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="controllers/login.php" method="post">
           <div class="form-group">
             <label for="email">Correo electrónico</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="Ingrese su correo">
@@ -89,13 +87,13 @@ include 'includes/header.php';
         </button>
       </div>
       <div class="modal-body">
-        <form action="includes/datos.php" method="post">
+        <form action="controllers/registerdatos.php" method="post">
         <div class="form-group">
             <label for="registerName">Nombres</label>
             <input type="text" class="form-control" name="registerName" id="registerName" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">
-            <label for="registerSurname">Apellido</label>
+            <label for="registerSurname">Apellidos</label>
             <input type="text" class="form-control" name="registerSurname" id="registerSurname" placeholder="Ingrese su nombre">
           </div>
           <div class="form-group">

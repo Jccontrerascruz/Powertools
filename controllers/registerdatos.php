@@ -1,6 +1,6 @@
 <?php
 
-include "conexionBD.php";
+include "../includes/conexionBD.php";
 
 $registerName = $_POST['registerName'];
 $registerSurname = $_POST['registerSurname'];
