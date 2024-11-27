@@ -6,6 +6,8 @@
   <title>PowerTools - Inicio</title>
   <link rel="stylesheet" href="css/styles.css"> <!-- Vinculación del archivo CSS externo -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 

@@ -68,6 +68,11 @@ include 'includes/header.php';
           </div>
           <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
         </form>
+        <hr>
+        <!-- Botón de inicio de sesión con Google -->
+        <a href="controllers/login.php" class="btn btn-danger btn-block">
+          <i class="fab fa-google"></i> Ingresar con Google
+        </a>
       </div>
       <div class="modal-footer">
         <p class="mr-auto">¿No tienes una cuenta? <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal">Regístrate</a></p>
@@ -75,6 +80,7 @@ include 'includes/header.php';
     </div>
   </div>
 </div>
+
 
 <!-- Modal de Registro -->
 <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
