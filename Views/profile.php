@@ -1,3 +1,26 @@
+<?php
+include "../includes/conexionBD.php"; // Conexión a la base de datos
+
+// Consultar los datos del usuario
+// Asegúrate de tener un mecanismo para identificar al usuario (por ejemplo, una sesión activa)
+session_start();
+$user_id = $_SESSION['Nombre']; // Obtén el ID del usuario desde la sesión
+
+$query = "SELECT Nombre, Apellidos FROM usuarios WHERE Correo_Electronico  = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $nombre = $row['Nombre'];
+    $apellidos = $row['Apellidos'];
+} else {
+    $nombre = "Invitado";
+    $apellidos = "";
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,7 +35,7 @@
   <!-- Barra de Navegación -->
   <header class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="http://localhost/Powertools/">
+      <a class="navbar-brand" href="http://localhost/Powertools-1/">
         <img src="../Imagenes/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
         PowerTools
       </a>
@@ -31,7 +54,7 @@
             <a class="nav-link" href="carrito.html">Carrito</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-danger text-white" href="/Powertools/controllers/logout.php">Cerrar Sesión</a>
+            <a class="nav-link btn btn-danger text-white" href="/Powertools-1/controllers/logout.php">Cerrar Sesión</a>
           </li>
         </ul>
       </div>
@@ -41,7 +64,7 @@
   <!-- Sección de Bienvenida -->
   <section class="py-5 text-center bg-light">
     <div class="container">
-      <h1>Bienvenido de nuevo, juan</h1>
+      <h1>Bienvenido de nuevo, <?php echo htmlspecialchars($nombre . ' ' . $apellidos); ?></h1>
       <p class="lead">Consulta tu historial de compras o encuentra productos recomendados para ti.</p>
     </div>
   </section>
