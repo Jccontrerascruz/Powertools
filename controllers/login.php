@@ -87,6 +87,7 @@ if (!isset($_GET['code'])) {
     exit;
 }
 
+
 // Manejar retorno de Google con el código
 if (isset($_GET['code'])) {
     write_log("Parámetro 'code' recibido: " . $_GET['code']);
