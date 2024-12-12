@@ -8,6 +8,7 @@ define('REDIRECT_URI', 'http://localhost/powertools-1/views/profile.php'); // UR
 define('REDIRECT_URI_ADMIN', 'http://localhost/powertools-1/views/admin.html'); // URI de redirección para administradores
 define('REDIRECT_URI_GOOGLE', 'http://localhost/powertools-1/controllers/login.php'); // URI de redirección para Google
 
+
 function write_log($message) {
     $date = date('Y-m-d H:i:s');
     $client_ip = $_SERVER['REMOTE_ADDR'] ?? 'UNKNOWN';
